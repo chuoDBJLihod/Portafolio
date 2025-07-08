@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Juan Pablo Correa Gómez - Portafolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: radial-gradient(circle at center, #1c1c1c 0%, #0e0e0e 100%);
+      color: #e0e0e0;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1e1e1e, #3a0ca3);
+      padding: 60px 20px;
+      text-align: center;
+      position: relative;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    header img.logo {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      width: 70px;
+      animation: floatLogo 4s ease-in-out infinite;
+    }
+
+    header img.perfil {
+      width: 140px;
+      border-radius: 50%;
+      border: 4px solid #6f42c1;
+      margin-bottom: 15px;
+      box-shadow: 0 0 20px #6f42c1;
+    }
+
+    header h1 {
+      margin: 10px 0 5px;
+      font-size: 2.6rem;
+      color: #b497ff;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #d0c7f0;
+      font-style: italic;
+    }
+
+    @keyframes floatLogo {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    section {
+      margin-bottom: 60px;
+    }
+
+    h2 {
+      color: #b497ff;
+      font-size: 2rem;
+      margin-bottom: 20px;
+      position: relative;
+    }
+
+    h2::after {
+      content: '';
+      display: block;
+      margin: 10px auto 0;
+      width: 60px;
+      height: 3px;
+      background: #6f42c1;
+      border-radius: 2px;
+    }
+
+    p, ul li {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li::before {
+      content: '\2022';
+      color: #6f42c1;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+    }
+
+    .tech-icons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .tech-icons img {
+      height: 50px;
+      filter: grayscale(100%) brightness(1.3);
+      transition: transform 0.3s ease;
+    }
+
+    .tech-icons img:hover {
+      transform: scale(1.2);
+      filter: none;
+    }
+
+    footer {
+      background-color: #1a1a1a;
+      color: #aaa;
+      text-align: center;
+      padding: 30px;
+      margin-top: 60px;
+      border-top: 2px solid #333;
+    }
+
+    a {
+      color: #c77dff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="./assets/img/logo.png" class="logo" alt="Logo">
+    <img src="./assets/img/1751926967322-removebg-preview.png" class="perfil" alt="Foto de perfil">
+    <h1>Juan Pablo Correa Gómez</h1>
+    <p>Tecnólogo en Análisis y Desarrollo de Software | Desarrollador Creativo</p>
+        <a href="https://github.com/chuoDBJLihod" target="_blank">
+      <img src="https://skillicons.dev/icons?i=github" alt="GitHub" style="height: 40px; margin-top: 10px;" />
+    </a>
+  </header>
+
+  <div class="container">
+    <section>
+      <h2>✨ Sobre mí</h2>
+      <p>Soy un apasionado del desarrollo de software con enfoque en soluciones reales que impacten la productividad y organización. Me destaco por mi pensamiento lógico, responsabilidad y habilidades autodidactas.</p>
+    </section>
+
+<section>
+  <h2>🚀 Proyectos</h2>
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+    <div style="background-color: #2a2a2a; border-radius: 10px; width: 500px; padding: 20px; box-shadow: 0 0 15px rgba(0,0,0,0.4);">
+      <iframe src="https://chuoDBJLihod.github.io/incentivos/menu.html" width="100%" height="500px" style="border-radius: 8px; border: none; margin-bottom: 10px;"></iframe>
+      <h3 style="color: #b497ff;">Software para Cálculo de Incentivos</h3>
+      <p style="font-size: 0.95rem;">Cálculo eficiente de productividad en operarias mediante métricas.</p>
+    </div>
+    <div style="background-color: #2a2a2a; border-radius: 10px; width: 500px; padding: 20px; box-shadow: 0 0 15px rgba(0,0,0,0.4);">
+      <iframe src="https://chuodbjlihod.github.io/tiempos-muertos/inproduct_time/views/index.html" width="100%" height="500" style="border-radius: 8px; border: none; margin-bottom: 10px;"></iframe>
+      <h3 style="color: #b497ff;">Control de Tiempos Muertos</h3>
+      <p style="font-size: 0.95rem;">Registro y análisis de inactividad de mecánicos para mejoras productivas.</p>
+    </div>
+</section>
+
+    <section>
+      <h2>📊 Tecnologías</h2>
+      <div class="tech-icons">
+        <img src="https://skillicons.dev/icons?i=html" alt="HTML" />
+        <img src="https://skillicons.dev/icons?i=css" alt="CSS" />
+        <img src="https://skillicons.dev/icons?i=js" alt="JavaScript" />
+        <img src="https://skillicons.dev/icons?i=php" alt="PHP" />
+        <img src="https://skillicons.dev/icons?i=java" alt="Java" />
+        <img src="https://skillicons.dev/icons?i=python" alt="Python" />
+        <img src="https://skillicons.dev/icons?i=mysql" alt="MySQL" />
+        <img src="https://skillicons.dev/icons?i=git" alt="Git" />
+        <img src="https://skillicons.dev/icons?i=github" alt="GitHub" />
+      </div>
+    </section>
+
+    <section>
+      <h2>📧 Contacto</h2>
+      <p>Correo: <a href="mailto:jcorreagomez761@gmail.com">jcorreagomez761@gmail.com</a></p>
+      <p>Telefono: <a href="mailto:3207062436">3207062436</a></p>
+
+    </section>
+  </div>
+
+  <footer>
+    <p>✨ Gracias por visitar mi sitio personal. Hecho con pasión por el código. ✨</p>
+  </footer>
+</body>
+</html>
